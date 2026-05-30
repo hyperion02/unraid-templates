@@ -19,11 +19,11 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1780114742</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>Portabase requires Postgresql17 to perform dashboard installation. Please have a database configured prior to installation.</Requires>
   <Config Name="WebUI Port" Target="80" Default="8887" Mode="tcp" Description="Host port for the Portabase web interface" Type="Port" Display="always" Required="true" Mask="false">8887</Config>
+  <Config Name="Data Path" Target="/data" Default="/mnt/user/appdata/portabase/dashboard" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/portabase/dashboard</Config>
   <Config Name="Database String" Target="DATABASE_URL" Default="" Mode="" Description="enter in the format of &#13;&#10;postgresql://{Username}:{Secret}@{hostname or ip}:{port}/{Database Name}?schema=public&#13;&#10;&#13;&#10;i.e. postgresql://username:password@hostname:1234/portabase?schema=public" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="New User Registration Allowed" Target="AUTH_SIGNUP_ENABLED" Default="" Mode="" Description="true/false&#13;&#10;set to true to enable new user registration from the login page. Required for initial setup if not passing a user via Default User Name, Default User, and Default Password" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Passkey Auth Enabled" Target="AUTH_PASSKEY_ENABLED" Default="true" Mode="" Description="true/false&#13;&#10;Allow Passkey authentication" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
