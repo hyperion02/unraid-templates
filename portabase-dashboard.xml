@@ -19,7 +19,6 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1780113368</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>Portabase requires Postgresql17 to perform dashboard installation. Please have a database configured prior to installation.</Requires>
